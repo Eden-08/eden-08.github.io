@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DGS</title>
+    <link rel="stylesheet" href="UAS.css">
+    <script src="https://kit.fontawesome.com/347ac89e88.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+        <div class="container"></div>
+    <div class="header"> 
+        <div class="topnav">
+          <h1>Den Guitar Shop</h1>
+            <ol>
+                <a href="guitar&bass.html">Guitar & Bass</a>
+                <a href="hardcase.html">Hardcase</a>
+                <a href="pedalboard.html">Pedal Board</a>
+                <a href="parts.html">Parts</a>
+                <a href=".html">About</a>
+            </ol>
+            <input type="text" name="search" class="search" placeholder="search">
+        </div>
+        <div class="slideshow-container">
+
+        
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+              <img src="images/download1.jfif" style="width:100%">
+            <div class="text">Den Guitar Shop</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+              <img src="images/images2.jpg" style="width:100%">
+            <div class="text">Den Guitar Shop</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+              <img src="images/images7.jpggit" style="width:100%">
+            <div class="text">Den Guitar Shop</div>
+          </div>
+        
+        
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+          <br>
+          <div class="content">
+              <div class="card">
+                  <img src="images/images6.jpg" style="width: 300px">
+                  <h2>Gitar Gibson Les Paul custom</h2>
+                  <p>Harga: Rp1500,000</p>
+                  <input type="submit" name="submit" value="Beli" style="width: 100px;">
+              </div>
+              <div class="card">
+                  <img src="images/images7.jpg" style="width: 300px">
+                  <h2>Gitar Acoustik </h2>
+                  <p>Harga: Rp600,000</p>
+                  <input type="submit" name="submit" value="Beli" style="width: 100px;">
+              </div>
+              <div class="card">
+                  <img src="images/images8.jpg" style="width: 300px">
+                  <h2>Gitar Emg demon </h2>
+                  <p>Harga: Rp3000,000</p>
+                  <input type="submit" name="submit" value="Beli" style="width: 100px;">
+              </div>
+              <div class="card">
+                  <img src="images/images9.jpg" style="width: 300px">
+                  <h2>Gitar Gibson Hollow Body  </h2>
+                  <p>Harga: Rp4500,000</p>
+                  <input type="submit" name="submit" value="Beli" style="width: 100px;">
+              </div>
+          </div>
+              <div class="wrap-footer">
+                <ol>
+                  <a href="">
+                    <li class="fa fa-facebook"></li>
+                  </a>
+                  <a href="">
+                    <li class="fa fa-twitter"></li>
+                  </a>
+                  <a href="">
+                    <li class="fa fa-instagram"></li>
+                  </a>
+                </ol>
+                <p>&copy; 26 Agustus 2020 Den Guitar Shop</p>
+              </div>
+              
+          </div>
+    </div>
+</body>
+<script>
+  var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); 
+}
+  </script> 
+</html>
